@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762706105341",
+    "project_id": "emergenciasmecaleyenda-c7a2a",
+    "storage_bucket": "emergenciasmecaleyenda-c7a2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762706105341:android:b252bd86c256b8f4e9ff94",
+        "android_client_info": {
+          "package_name": "com.emergencias.meca_leyenda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcFZtfPsWL4JaB0O_i7E_-j6JQBDi-1nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

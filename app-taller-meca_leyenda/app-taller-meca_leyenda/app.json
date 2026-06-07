@@ -1,0 +1,104 @@
+{
+  "expo": {
+    "name": "Mecanica la leyenda",
+    "slug": "emergencias-meca-leyenda",
+    "version": "1.0.5",
+    "orientation": "portrait",
+    "icon": "./assets/logo1.png",
+    "scheme": "emergencias-meca-leyenda",
+    "userInterfaceStyle": "automatic",
+    "web": {
+      "bundler": "metro"
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.emergencias.meca_leyenda",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        },
+        "NSLocationWhenInUseUsageDescription": "Necesitamos tu ubicación para encontrar talleres cercanos y reportar la emergencia.",
+        "NSCameraUsageDescription": "Necesitamos acceso a la cámara para fotografiar el daño del vehículo.",
+        "NSMicrophoneUsageDescription": "Necesitamos el micrófono para que puedas describir el problema en audio.",
+        "NSPhotoLibraryUsageDescription": "Necesitamos acceso a tus fotos para adjuntar imágenes al reporte."
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo1.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.emergencias.meca_leyenda",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Necesitamos la cámara para fotografiar el daño."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Necesitamos acceso a tus fotos para adjuntar imágenes al reporte.",
+          "cameraPermission": "Necesitamos la cámara para fotografiar el daño del vehículo."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Necesitamos tu ubicación para encontrar talleres cercanos."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/logo1.png",
+          "color": "#ef4444"
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.tuapp",
+          "enableGooglePay": true
+        }
+      ],
+      "expo-font",
+      "expo-audio",
+      "expo-video",
+      "expo-asset"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "apiUrl": "https://ws-taller-meca-leyenda.chambi.shop",
+      "easProjectId": "f59886ef-554f-4721-b283-d328fcf64ac1",
+      "eas": {
+        "projectId": "36b1d731-fa7b-4ed9-8728-6b57015a187b"
+      }
+    },
+    "owner": "rister"
+  }
+}
